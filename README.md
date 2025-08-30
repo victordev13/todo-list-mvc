@@ -1,6 +1,6 @@
-# Todo List Manager
+# Todo List
 
-Um sistema de gerenciamento de listas de tarefas desenvolvido em PHP seguindo o padrão MVC.
+Um sistema de listas de tarefas desenvolvido em PHP seguindo o padrão MVC.
 
 ## Características
 
@@ -44,14 +44,6 @@ todo-list/
 
 ## Funcionalidades
 
-### Listas de Tarefas
-- ✅ Criar nova lista
-- ✅ Listar todas as listas
-- ✅ Editar lista existente
-- ✅ Remover lista
-- ✅ Ver detalhes da lista com itens
-- ✅ Indicador de progresso (itens concluídos/total)
-
 ### Itens da Lista
 - ✅ Adicionar novo item
 - ✅ Marcar/desmarcar como concluído
@@ -82,7 +74,7 @@ $database = new Database(
 ### 3. Instalação
 
 ```bash
-cd todo-list
+cd todo-list-mvc
 composer dump-autoload
 ```
 
@@ -91,15 +83,6 @@ composer dump-autoload
 Configure o servidor web para apontar para a pasta `public/` como document root.
 
 ## Rotas Disponíveis
-
-### Listas
-- `GET /` - Página inicial com resumo das listas
-- `GET /todo-lists` - Listar todas as listas
-- `GET /todo-lists/cadastrar` - Formulário para nova lista
-- `GET /todo-lists/editar?id={id}` - Formulário para editar lista
-- `POST /todo-lists/salvar` - Salvar lista (criar/editar)
-- `GET /todo-lists/remover?id={id}` - Remover lista
-- `GET /todo-lists/detalhes?id={id}` - Ver detalhes da lista
 
 ### Itens
 - `POST /todo-items/salvar` - Adicionar novo item
@@ -134,15 +117,6 @@ Configure o servidor web para apontar para a pasta `public/` como document root.
 - Prepared statements para segurança
 - Relacionamentos com chaves estrangeiras
 
-## Capturas de Tela
-
-O sistema possui interface intuitiva com:
-- Dashboard com resumo das listas
-- Listagem completa com indicadores de progresso
-- Formulários simples para CRUD
-- Página de detalhes interativa para gerenciar itens
-- Tratamento de erros amigável
-
 ## Tecnologias
 
 - **PHP 8+**
@@ -150,13 +124,3 @@ O sistema possui interface intuitiva com:
 - **Bootstrap 5.3.3**
 - **Bootstrap Icons**
 - **Composer** (PSR-4 Autoload)
-
-## Próximas Implementações
-
-- [ ] Sistema de usuários
-- [ ] Categorias para listas
-- [ ] Datas de vencimento
-- [ ] Prioridades
-- [ ] Busca e filtros
-- [ ] API REST
-- [ ] Testes automatizados
